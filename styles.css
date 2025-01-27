@@ -1,0 +1,308 @@
+/* Etusivu alku */
+body
+{
+    background-color: white;
+    color: #ffffff;
+    line-height: 1.5;
+    background-image: url(background1.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.701);
+    background-blend-mode: overlay;
+    font-family: Josefin Sans;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.teksti
+{
+    color: rgba(255, 255, 255, 0);
+}
+
+.desktopartikkeli
+{
+    padding-left: 100px;
+}
+
+h2
+{
+    font-weight: 350;
+}
+
+.bg
+{
+    color: rgb(0, 0, 139);
+}
+
+.navbar{
+    color: rgb(255, 255, 255) !important;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: transparent !important;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.navbar-collapse {
+    background: transparent !important; 
+}
+
+.dropdown-menu {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important;
+    padding: 0.25rem;
+    margin-right: 1rem;
+    font-weight: 350;
+}
+
+.navbar-brand {
+    color: rgb(255, 255, 255) !important;
+}
+
+.dropdown-menu .dropdown-item  {
+    color: rgb(255, 255, 255) !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: rgb(0, 0, 0) !important;
+}
+
+/* Viivat navigaatioon 
+.navbar-nav .nav-item:not(:last-child) {
+    border-right: 1.5px solid rgba(255, 255, 255, 0.317);
+    padding-right: 1px;
+}
+*/
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+  
+.pc_image {
+    max-width: 20%;
+    height: auto;
+}
+  
+.text-content {
+    max-width: 50%;
+}
+
+.nimi {
+    display: none;
+}
+
+.mobilelogo, .mobilefooter, .mobileheadericons, .mobileartikkeli, .mobilenimi {
+    display: none;
+}
+
+.desktopnimi
+{
+    font-size: 25px;
+    padding-right: 50px;
+    font-weight: 450;
+    padding-top: 8px;
+}
+
+
+  
+/* Etusivu loppu */
+
+/* Mobiili optimointi */
+
+@media (max-width: 767.98px) {
+.navbar-nav .nav-link {
+    font-size: 14px; /* Smaller font size for mobile */
+    padding: 0.5rem; /* Adjust padding for better spacing */
+}
+
+.text-content {
+    max-width: fit-content; /* Full width for text content on mobile */
+    padding: 0 15px; /* Add some padding for better readability */
+}
+.artikkeli {
+    flex-direction: column;
+        justify-content: start;
+        height: auto;
+        padding-left: 0;
+}
+
+.pc_image {
+    display: none;
+}
+
+.logo {
+    display: none;
+}
+
+.mobilelogo{
+    display: flex;
+    padding: 10px;
+}
+
+.mobilenimi {
+    display: flex;
+    padding-top: 10px;
+}
+
+.navbar {
+    background: transparent !important;
+    border-radius: 15px;
+    padding: 5px;
+    top: 0;
+    z-index: 1000;
+    padding-bottom: 15px;
+
+}
+
+.desktopheadericons, .desktopsearch {
+    display: none;
+    padding-left: 10px;
+}
+
+.mobileheadericons {
+    display: flex;
+    padding-left: 10px;
+}
+
+/* footer */
+
+.mobilefooter {
+    font-size: 16px; /* Smaller font size for mobile */
+    display: flex;
+}
+
+.mobilefooter1
+{
+    padding-left: 10px;
+}
+
+.mobilefooter2
+{
+    padding-left: 50px;
+}
+
+.desktopfooter, .desktopartikkeli, .desktopnimi
+{
+    display: none;
+}
+
+.mobileartikkeli
+{
+    display: flex;
+}
+
+.mobilepcpic
+{
+    display: flex;
+    padding-left: 50px;
+}
+
+/* footer loppuu */
+
+/* tuotteet */
+
+.custom-btn {
+    max-width: 100%; /* Täysi leveys pienillä näytöillä */
+    padding: 10px 20px;
+  }
+
+/* tuotteet loppuu */
+}
+
+/* Mobiili optimointi loppuu */
+
+/* Ota Yhteyttä */
+
+
+form {
+    display: flex;
+    flex-direction: column; /* Kentät päällekkäin */
+    gap: 5px; /* Väli kenttien välillä */
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+input[type="submit"] {
+    width: 150px; /* Aseta painikkeen leveys pienemmäksi */
+    height: 40px; /* Aseta painikkeen korkeus pienemmäksi */
+    padding: 8px 16px; /* Vähennä padding-arvoja, jotta painike on pienempi */
+    font-size: 14px; /* Pienennä fonttikokoa */
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(150, 149, 149);
+}
+
+/* Ota Yhteyttä päättyy tähän */
+
+/* Tuotteet */
+
+
+/* Card Styles */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); /* Updated shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.35); /* Stronger shadow on hover */
+  }
+  
+  
+  /* Lisää ostoskoriin -painike */
+  .custom-btn {
+    width: 100%; /* Full width of the parent */
+    max-width: 184px; /* Maintain the max width for larger screens */
+    height: auto; /* Let height adjust based on content */
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
+  
+  /* Näppäimen hover-efekti */
+  .custom-btn:hover {
+    transform: translateY(-2px); /* lift-efekti */
+    box-shadow: 6px 15px 30px rgba(0, 0, 0, 0.2); /* Parannettu varjo */
+  }
+  
+  /* Ostoskärry-ikoni */
+  .cart-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .product-img {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed /
+    object-fit: cover; / Ensures the image covers the area without distortion /
+    background: transparent; / Ensures no background color */
+  }
+  /* Tuotteet loppuu tähän */
