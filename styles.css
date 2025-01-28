@@ -4,14 +4,13 @@ body
     background-color: white;
     color: #ffffff;
     line-height: 1.5;
-    background-image: url(pics/background1.jpg);
+    background-image: url(pics/background.jpg);
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.701);
     background-blend-mode: overlay;
     font-family: Josefin Sans;
     padding-top: 20px;
     padding-bottom: 40px;
-    background-attachment: fixed;
 }
 
 .teksti
@@ -60,8 +59,7 @@ h2
 }
 
 .dropdown-menu {
-    background: transparent !important;
-    backdrop-filter: blur(10px) !important; 
+    background-color: rgb(46, 0, 82); 
 }
 
 .navbar-nav .nav-link {
@@ -124,10 +122,6 @@ h2
     padding-top: 8px;
 }
 
-.desktopfooter
-{
-    background: linear-gradient(to bottom, transparent, black);
-}
 
 .paddingtest
 {
@@ -163,14 +157,9 @@ h2
     display: none;
 }
 
-.mobilelogo{
+.mobilelogo,.mobilenimi{
     display: flex;
     padding: 10px;
-}
-
-.mobilenimi {
-    display: flex;
-    padding-top: 10px;
 }
 
 .navbar {
@@ -226,6 +215,10 @@ h2
     padding-left: 50px;
 }
 
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.24); 
+}
+
 /* footer loppuu */
 
 /* tuotteet */
@@ -278,4 +271,16 @@ input[type="submit"]:hover {
 }
 
 /* Ota Yhteyttä päättyy tähän */
+
+/* Tietoa Meistä alkaa tästä */
+
+/* Marginaali kortteihin, jotta ne eivät mene päällekkäin */
+.row .col-md-4 {
+    margin-bottom: 15px; /* Väli korttien alle */
+  }
+  
+  /* Korttien leveys on aina yhtä suuri */
+  .card {
+    max-width: 100%;
+  }
 

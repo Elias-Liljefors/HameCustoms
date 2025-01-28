@@ -50,24 +50,31 @@
                           <li><a class="dropdown-item" href="tuotteet.html">Kaikki tuotteet</a></li>
                           <li><a class="dropdown-item" href="tietokoneet.html">Tietokoneet</a></li>
                           <li><a class="dropdown-item" href="hiiret.html">Hiiret</a></li>
-                          <li><a class="dropdown-item" href="#">Näppäimistöt</a></li>
+                          <li><a class="dropdown-item" href="nappaimistot.html">Näppäimistöt</a></li>
                         </ul>
                       </li>
 
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">TIETOA MEISTÄ</a>
+                    <a class="nav-link active" aria-current="page" href="tietoa_meista.html">TIETOA MEISTÄ</a>
                   </li>
 
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="ota_yhteytta.html">OTA YHTEYTTÄ</a>
                   </li>
 
-                  <img src="pics/search.png" alt="" width="30" height="30" role="button" class="desktopsearch">
+                  <form class="d-flex search" role="search" style="padding-left: 20px;"></form>
+                      <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 200px; height: 30px;">
+                  </form>
+                    <button class="btn btn-outline-success" type="submit" style="width: 40px; height: 30px; display: flex; align-items: center; justify-content: center">
+                    <img src="pics/search.png" alt="Search" width="20" height="20">
+                    </button>
                 </ul>
 
                 <div class="desktopheadericons">
                   <div class="d-flex align-items-center">
-                    <img src="pics/shoppingcart.png" alt="" width="20" height="auto" class="me-5" role="button">
+                    <a href="ostoskori.html">
+                      <img src="pics/shoppingcart.png" alt="" width="20" height="auto" class="me-5" role="button">
+                    </a>
                       <a href="svenska.html" class="nav-link">På svenska</a>
                   </div>
                 </div>
@@ -75,7 +82,8 @@
                 <div class="mobileheadericons">
                   <div class="d-flex align-items-center">
                     <img src="pics/search.png" alt="" width="25" height="25" role="button" class="me-3">
-                    <img src="shoppingcart.png" alt="" width="25" height="auto" role="button" class="me-5">
+                    <a href="ostoskori.html" class="nav-link">
+                      <img src="pics/shoppingcart.png" alt="" width="25" height="auto" role="button" class="me-5">
                     <a href="svenska.html" class="nav-link">På svenska</a>
                   </div>
                 </div>
@@ -94,7 +102,7 @@
               <div class="row g-4">
                 <div class="col-md-4 d-flex">
                   <div class="card text-white bg-transparent border-0 shadow-lg h-100">
-                    <img src="pics/computer1.png" class="card-img-top img-fluid rounded product-img" alt="Custom PC #1">
+                    <img src="pics/tietokone1.png" class="card-img-top img-fluid rounded product-img" alt="Custom PC #1">
                     <div class="card-body d-flex flex-column justify-content-between">
                       <div class="text-center">
                         <h5 class="card-title">UltimateX Max Pro</h5>
@@ -110,7 +118,7 @@
                 </div>
                 <div class="col-md-4 d-flex">
                   <div class="card text-white bg-transparent border-0 shadow-lg h-100">
-                    <img src="pics/computer2.png" class="card-img-top img-fluid rounded product-img" alt="Custom PC #2">
+                    <img src="pics/tietokone2.png" class="card-img-top img-fluid rounded product-img" alt="Custom PC #2">
                     <div class="card-body d-flex flex-column justify-content-between">
                       <div class="text-center">
                         <h5 class="card-title">ShadowForce Ultra</h5>
@@ -126,7 +134,7 @@
                 </div>
                 <div class="col-md-4 d-flex">
                   <div class="card text-white bg-transparent border-0 shadow-lg h-100">
-                    <img src="pics/computer3.png" class="card-img-top img-fluid rounded product-img" alt="Custom PC #3">
+                    <img src="pics/tietokone3.png" class="card-img-top img-fluid rounded product-img" alt="Custom PC #3">
                     <div class="card-body d-flex flex-column justify-content-between">
                       <div class="text-center">
                         <h5 class="card-title">NebulaStrike X</h5>
@@ -146,7 +154,7 @@
               <div class="row g-4 mt-4">
                 <div class="col-md-4 d-flex">
                   <div class="card text-white bg-transparent border-0 shadow-lg h-100">
-                    <img src="pics/mouse3.png" class="card-img-top img-fluid rounded product-img" alt="Mouse #1">
+                    <img src="pics/hiiri3.png" class="card-img-top img-fluid rounded product-img" alt="Mouse #1">
                     <div class="card-body d-flex flex-column justify-content-between">
                       <div class="text-center">
                         <h5 class="card-title">ShadowStrike Viper</h5>
@@ -162,7 +170,7 @@
                 </div>
                 <div class="col-md-4 d-flex">
                   <div class="card text-white bg-transparent border-0 shadow-lg h-100">
-                    <img src="pics/mouse1.png" class="card-img-top img-fluid rounded product-img" alt="Mouse #2">
+                    <img src="pics/hiiri1.png" class="card-img-top img-fluid rounded product-img" alt="Mouse #2">
                     <div class="card-body d-flex flex-column justify-content-between">
                       <div class="text-center">
                         <h5 class="card-title">AeroBlade Phantom</h5>
@@ -178,7 +186,7 @@
                 </div>
                 <div class="col-md-4 d-flex">
                   <div class="card text-white bg-transparent border-0 shadow-lg h-100">
-                    <img src="pics/mouse2.png" class="card-img-top img-fluid rounded product-img" alt="Mouse #3">
+                    <img src="pics/hiiri2.png" class="card-img-top img-fluid rounded product-img" alt="Mouse #3">
                     <div class="card-body d-flex flex-column justify-content-between">
                       <div class="text-center">
                         <h5 class="card-title">CrimsonClaw X</h5>
@@ -198,7 +206,7 @@
               <div class="row g-4 mt-4">
                 <div class="col-md-4 d-flex">
                   <div class="card text-white bg-transparent border-0 shadow-lg h-100">
-                    <img src="pics/keyboard1.png" class="card-img-top img-fluid rounded product-img" alt="Keyboard #1">
+                    <img src="pics/nappis1.png" class="card-img-top img-fluid rounded product-img" alt="Keyboard #1">
                     <div class="card-body d-flex flex-column justify-content-between">
                       <div class="text-center">
                         <h5 class="card-title">MechaMaster Pro</h5>
@@ -214,7 +222,7 @@
                 </div>
                 <div class="col-md-4 d-flex">
                   <div class="card text-white bg-transparent border-0 shadow-lg h-100">
-                    <img src="pics/keyboard2.png" class="card-img-top img-fluid rounded product-img" alt="Keyboard #2">
+                    <img src="pics/nappis2.png" class="card-img-top img-fluid rounded product-img" alt="Keyboard #2">
                     <div class="card-body d-flex flex-column justify-content-between">
                       <div class="text-center">
                         <h5 class="card-title">KeyBlaze Ultra</h5>
@@ -230,7 +238,7 @@
                 </div>
                 <div class="col-md-4 d-flex">
                   <div class="card text-white bg-transparent border-0 shadow-lg h-100">
-                    <img src="pics/keyboard3.png" class="card-img-top img-fluid rounded product-img" alt="Keyboard #3">
+                    <img src="pics/nappis3.png" class="card-img-top img-fluid rounded product-img" alt="Keyboard #3">
                     <div class="card-body d-flex flex-column justify-content-between">
                       <div class="text-center">
                         <h5 class="card-title">StealthKeys</h5>

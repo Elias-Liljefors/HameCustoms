@@ -49,21 +49,21 @@
                           <li><a class="dropdown-item" href="tuotteet.html">Kaikki tuotteet</a></li>
                           <li><a class="dropdown-item" href="tietokoneet.html">Tietokoneet</a></li>
                           <li><a class="dropdown-item" href="hiiret.html">Hiiret</a></li>
-                          <li><a class="dropdown-item" href="#">Näppäimistöt</a></li>
+                          <li><a class="dropdown-item" href="nappaimistot.html">Näppäimistöt</a></li>
                         </ul>
                       </li>
 
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">TIETOA MEISTÄ</a>
+                    <a class="nav-link active" aria-current="page" href="tietoa_meista.html">TIETOA MEISTÄ</a>
                   </li>
 
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="ota_yhteytta.html">OTA YHTEYTTÄ</a>
                   </li>
-                  <form class="d-flex search" role="search" style="padding-left: 20px;">
-                    <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 200px; height: 30px; background-color: rgba(255, 255, 255, 0.144);">
+                  <form class="d-flex search" role="search" style="padding-left: 20px;"></form>
+                      <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 200px; height: 30px;">
                   </form>
-                    <button class="btn btn-outline-success" type="submit" style="width: 40px; height: 30px; display: flex; align-items: center; justify-content: center;">
+                    <button class="btn btn-outline-success" type="submit" style="width: 40px; height: 30px; display: flex; align-items: center; justify-content: center">
                     <img src="pics/search.png" alt="Search" width="20" height="20">
                     </button>
                   <!--
@@ -74,15 +74,17 @@
 
                 <div class="desktopheadericons">
                   <div class="d-flex align-items-center">
-                    <img src="pics/shoppingcart.png" alt="" width="20" height="auto" class="me-5" role="button">
+                    <a href="ostoskori.html">
+                      <img src="pics/shoppingcart.png" alt="" width="20" height="auto" class="me-5" role="button">
+                    </a>
                       <a href="svenska.html" class="nav-link">På svenska</a>
                   </div>
                 </div>
 
                 <div class="mobileheadericons">
                   <div class="d-flex align-items-center">
-                    <img src="pics/search.png" alt="" width="25" height="25" role="button" class="me-3">
-                    <img src="shoppingcart.png" alt="" width="25" height="auto" role="button" class="me-5">
+                    <a href="ostoskori.html">
+                      <img src="pics/shoppingcart.png" alt="" width="25" height="auto" role="button" class="me-5">
                     <a href="svenska.html" class="nav-link">På svenska</a>
                   </div>
                 </div>
@@ -103,8 +105,36 @@
                   <aside class="text-content col-md-8 p-5">  
                       <p>Tervetuloa uuteen verkkokauppaamme! Täältä löydät maan (ja ehkä maailman) parhaimman valikoiman tietokoneita ja oheislaitteita.</p> <br>
                       <p>Teemme yhteyistyötä tubettajien ja muiden pro gamereiden kanssa. Myös rappiotubettajien liikenne on meille tärkeää sillä välillä voi tulla ö ja pahat tillanteet jolloin kalex kaatuu konneelle ja se kaikki menee vituis &äijienmaailmanlopun.</p>
-                    </aside>
+                  </aside>
                 </div>
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000" href="tietokoneet.html" type="button">
+                      <img src="pics/computer2.png" class="d-block w-50 mx-auto" alt="...">
+                      <h1 class="text-center">Tietokoneet</h1>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000" href="hiiret.html" type="button">
+                      <img src="pics/hiiri1.png" class="d-block w-50 mx-auto" alt="...">
+                      <h1 class="text-center">Hiiret</h1>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000" href="nappaimistot.html" type="button">
+                      <img src="pics/keyboard1.png" class="d-block w-50 mx-auto" alt="...">
+                      <h1 class="text-center">Näppäimistöt</h1>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <br>
+                <br>
+                <h1>Jotaim tekstiä ö</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laudantium labore nobis, rem voluptates itaque obcaecati. Sapiente eligendi provident modi cupiditate accusamus rem voluptas saepe animi impedit adipisci. Deleniti, aperiam.</p>
             </article>
         </div>
 
@@ -142,6 +172,17 @@
                   <b>HämeCustoms</b> <br>
                     Linnankatu 5 <br>
                     13100
+                </div>
+                <div class="social-media">
+                  <a href="https://www.facebook.com" target="_blank" class="nav-link">
+                    <img src="pics/facebook.webp" alt="Facebook" width="30" height="30">
+                  </a>
+                  <a href="https://www.twitter.com" target="_blank" class="nav-link">
+                    <img src="pics/twitter.png" alt="Twitter" width="30" height="30">
+                  </a>
+                  <a href="https://www.instagram.com" target="_blank" class="nav-link">
+                    <img src="pics/instagram.png" alt="Instagram" width="30" height="30">
+                  </a>
                 </div>
             </div>
             <div class="col-md-6">
