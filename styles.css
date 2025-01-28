@@ -12,7 +12,6 @@ body
     padding-top: 20px;
     padding-bottom: 40px;
     background-attachment: fixed;
-
 }
 
 .teksti
@@ -45,7 +44,7 @@ h2
     color: rgb(0, 0, 139);
 }
 
-.navbar{
+.navbar {
     color: rgb(255, 255, 255) !important;
     position: sticky;
     top: 0;
@@ -61,8 +60,8 @@ h2
 }
 
 .dropdown-menu {
-    background: rgba(255, 255, 255, 0.1) !important;
-    backdrop-filter: blur(10px);
+    background: transparent !important;
+    backdrop-filter: blur(10px) !important; 
 }
 
 .navbar-nav .nav-link {
@@ -125,7 +124,10 @@ h2
     padding-top: 8px;
 }
 
-desktop
+.desktopfooter
+{
+    background: linear-gradient(to bottom, transparent, black);
+}
 
 .paddingtest
 {
