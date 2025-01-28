@@ -127,6 +127,18 @@ h2
 {
     padding-bottom: 100px;
 }
+
+.searchbutton:hover
+{
+    background-color: rgba(0, 0, 0, 0.247) !important;
+    border-color: rgb(0, 0, 0) !important;
+}
+
+.searchbutton
+{
+    border-color: rgba(255, 255, 255, 0.185) !important;
+    background-color: rgba(255, 255, 255, 0.185) !important;
+}
   
 /* Etusivu loppu */
 
@@ -283,4 +295,18 @@ input[type="submit"]:hover {
   .card {
     max-width: 100%;
   }
+
+  /* Painikkeen tyylien muokkaus */
+.btn-primary {
+    background-color: rgb(13, 69, 125); /* Painikkeen väri */
+    border: none; /* Poistaa kehykset */
+    border-radius: 5px; /* Pyöristää kulmat */
+    padding: 15px 30px; /* Lisää paddingia painikkeelle */
+    font-size: 16px; /* Tekstin koko */
+  }
+  
+  .btn-primary:hover {
+    background-color: #9d9d9d; /* Väri, kun painiketta viedään hiirellä */
+  }
+  
 
