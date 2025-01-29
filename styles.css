@@ -13,11 +13,6 @@ body /* sivun yleisien elementtejen määritys */
     padding-bottom: 40px;
 }
 
-.teksti /* tyhjien alueiden läpinäkyvyys */
-{
-    color: rgba(255, 255, 255, 0);
-}
-
 .desktopartikkeli /* index.html sisällön määritys */
 {
     padding-left: 75px;
@@ -191,11 +186,11 @@ input[type="submit"]:hover {
 
   /* Painikkeen tyylien muokkaus */
 .btn-primary {
-    background-color: rgb(13, 69, 125); /* Painikkeen väri */
-    border: none; /* Poistaa kehykset */
-    border-radius: 5px; /* Pyöristää kulmat */
-    padding: 15px 30px; /* Lisää paddingia painikkeelle */
-    font-size: 16px; /* Tekstin koko */
+    background-color: rgb(13, 69, 125);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 16px;
   }
   
   .btn-primary:hover {
