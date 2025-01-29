@@ -15,95 +15,89 @@
 <body>
   <div class="container">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <a class="navbar-brand" href="#">
+      <form class="navbar-brand">
         <a href="index.html" class="logo">
-          <img src="pics/logo.png" width="70" height="70" class="d-inline-block align-top" alt="">
+          <img src="pics/logo.png" width="70" height="70" class="d-inline-block align-top" alt="logo">
         </a>
-      </a>    
+      </form>    
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex align-items-center">
+          <a href="index.html" class="nav-link">
+            <img src="pics/logo.png" width="60" height="60" class="mobilelogo" alt="">
+          </a>
+        </div>
+       
+       <a href="index.html" class="nav-link"><h1 class="desktopnimi">HämeCustoms</h1></a>
+        
+        <div class="mobilenimi">
+          <a href="index.html" class="nav-link">
+            <h1>HämeCustoms</h1>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    TUOTTEET
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="tuotteet.html">Kaikki tuotteet</a></li>
+                    <li><a class="dropdown-item" href="tietokoneet.html">Tietokoneet</a></li>
+                    <li><a class="dropdown-item" href="hiiret.html">Hiiret</a></li>
+                    <li><a class="dropdown-item" href="nappaimistot.html">Näppäimistöt</a></li>
+                  </ul>
+              </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="tietoa_meista.html">TIETOA MEISTÄ</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="ota_yhteytta.html">OTA YHTEYTTÄ</a>
+            </li>
+
+            <li>
+              <div class="desktopsearch d-flex align-items-center">
+                <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 200px; height: 30px;">
+                <button class="btn btn-outline-success desktopsearchbutton" type="submit" style="width: 40px; height: 30px; display: flex; align-items: center; justify-content: center;">
+                  <img src="pics/search.png" alt="Search" width="20" height="20">
+                </button>
+              </div>
+                
               
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+
+              <div class="mobilesearch">
+                <form class="d-flex search" role="search">
+                <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 180px; height: 30px;">
+                </form>
+                <button class="btn btn-outline-success mobilesearchbutton" type="submit" style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">
+                <img src="pics/search.png" alt="Search" width="20" height="20">
               </button>
-                <div class="d-flex align-items-center ">
-                  <a href="index.html" class="nav-link">
-                  <img src="pics/logo.png" width="60" height="60" class="mobilelogo" alt="">
-               </a>
-                </div>
-                <a href="index.html" class="nav-link"><h1 class="desktopnimi">HämeCustoms</h1></a>
-              
-              <div class="mobilenimi" >
-                <a href="index.html" class="nav-link">
-                  <h1>HämeCustoms</h1>
+              </div>
+            </li>
+
+            <li class="nav-item desktopsearch">
+              <a href="ostoskori.html" class="nav-link"  style="padding-left: 70px;">
+                <img src="pics/shoppingcart.png" alt="Shopping cart" width="20" height="20" class="me-5">
+              </a>
+            </li>
+              <li class="nav-item desktopsearch">
+                <a href="svenska.html" class="nav-link">På svenska</a>
+              </li>
+            </ul>
+
+            <div class="mobileheadericons">
+              <div class="d-flex align-items-center">
+                <a href="ostoskori.html" class="nav-link">
+                  <img src="pics/shoppingcart.png" alt="" width="25" height="25" class="me-5">
                 </a>
+                <a href="svenska.html" class="nav-link">På svenska</a>
               </div>
-              
-              
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="tuotteet.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          TUOTTEET
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="tuotteet.html">Kaikki tuotteet</a></li>
-                          <li><a class="dropdown-item" href="tietokoneet.html">Tietokoneet</a></li>
-                          <li><a class="dropdown-item" href="hiiret.html">Hiiret</a></li>
-                          <li><a class="dropdown-item" href="nappaimistot.html">Näppäimistöt</a></li>
-                        </ul>
-                      </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="tietoa_meista.html">TIETOA MEISTÄ</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="ota_yhteytta.html">OTA YHTEYTTÄ</a>
-                  </li>
-                  
-                  
-                  <form class="desktopsearch">
-                    <form class="d-flex search" role="search" style="padding-left: 20px;">
-                      <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 200px; height: 30px;">
-                      </form>
-                      <button class="btn btn-outline-success desktopsearchbutton" type="submit" style="width: 40px; height: 30px; display: flex; align-items: center; justify-content: center;">
-                      <img src="pics/search.png" alt="Search" width="20" height="20">
-                      </button>
-                  </form>
-                    
-                  
-
-                  <div class="mobilesearch">
-                    <form class="d-flex search" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 180px; height: 30px;">
-                    </form>
-                    <button class="btn btn-outline-success mobilesearchbutton" type="submit" style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">
-                    <img src="pics/search.png" alt="Search" width="20" height="20">
-                  </button>
-                  </div>
-                    
-
-
-                </ul>
-
-                <div class="desktopheadericons">
-                  <div class="d-flex align-items-center">
-                    <a href="ostoskori.html">
-                      <img src="pics/shoppingcart.png" alt="" width="20" height="auto" class="me-5" role="button">
-                    </a>
-                      <a href="svenska.html" class="nav-link">På svenska</a>
-                  </div>
-                </div>
-
-                <div class="mobileheadericons">
-                  <div class="d-flex align-items-center">
-                    <a href="ostoskori.html">
-                      <img src="pics/shoppingcart.png" alt="" width="25" height="auto" role="button" class="me-5">
-                    <a href="svenska.html" class="nav-link">På svenska</a>
-                  </div>
-                </div>
-              </div>
+            </div>
+        </div>
       </div>
     </nav>
         <div class="row align-items-center desktopartikkeli genericpadding">
@@ -122,34 +116,22 @@
                       <p>Teemme yhteyistyötä tubettajien ja muiden pro gamereiden kanssa. Myös rappiotubettajien liikenne on meille tärkeää sillä välillä voi tulla ö ja pahat tillanteet jolloin kalex kaatuu konneelle ja se kaikki menee vituis &äijienmaailmanlopun.</p>
                   </aside>
                 </div>
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div id="ekakaruselli" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000" href="tietokoneet.html" type="button">
+                    <div class="carousel-item active" data-bs-interval="3000">
                       <img src="pics/computer2.png" class="d-block w-50 mx-auto" alt="...">
                       <h1 class="text-center">Tietokoneet</h1>
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000" href="hiiret.html" type="button">
+                    <div class="carousel-item" data-bs-interval="3000">
                       <img src="pics/hiiri1.png" class="d-block w-50 mx-auto" alt="...">
                       <h1 class="text-center">Hiiret</h1>
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000" href="nappaimistot.html" type="button">
+                    <div class="carousel-item" data-bs-interval="3000">
                       <img src="pics/keyboard1.png" class="d-block w-50 mx-auto" alt="...">
                       <h1 class="text-center">Näppäimistöt</h1>
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-                <br>
-                <br>
-                <h1>Jotaim tekstiä ö</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laudantium labore nobis, rem voluptates itaque obcaecati. Sapiente eligendi provident modi cupiditate accusamus rem voluptas saepe animi impedit adipisci. Deleniti, aperiam.</p>
+                </div> 
             </article>
         </div>
 
@@ -161,7 +143,7 @@
               <h2>TYYLIKKÄIMMÄT TIETOKONEET</h2>
               <br>
               <br>
-              <img src="pics/pc.png" alt="" width="250" height="auto" class="mobilepcpic">
+              <img src="pics/pc.png" alt="pckuva" width="250" height="200" class="mobilepcpic">
             <div class="title">
               <img src="pics/pc.png" alt="PC Image" class="pc_image">
                 <aside class="text-content col-md-8 p-5">  
@@ -172,38 +154,22 @@
                     <br>
                   </aside>
               </div>
-              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div id="tokakaruselli" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="3000" href="tietokoneet.html" type="button">
+                  <div class="carousel-item active" data-bs-interval="3000">
                     <img src="pics/computer2.png" class="d-block w-50 mx-auto" alt="...">
                     <h1 class="text-center">Tietokoneet</h1>
                   </div>
-                  <div class="carousel-item" data-bs-interval="3000" href="hiiret.html" type="button">
+                  <div class="carousel-item" data-bs-interval="3000">
                     <img src="pics/hiiri1.png" class="d-block w-50 mx-auto" alt="...">
                     <h1 class="text-center">Hiiret</h1>
                   </div>
-                  <div class="carousel-item" data-bs-interval="3000" href="nappaimistot.html" type="button">
+                  <div class="carousel-item" data-bs-interval="3000">
                     <img src="pics/keyboard1.png" class="d-block w-50 mx-auto" alt="...">
                     <h1 class="text-center">Näppäimistöt</h1>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
-              <div class="text-content col-md-8 p-5"> 
-              <br>
-                <br>
-                <h1>Jotaim tekstiä ö</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laudantium labore nobis, rem voluptates itaque obcaecati. Sapiente eligendi provident modi cupiditate accusamus rem voluptas saepe animi impedit adipisci. Deleniti, aperiam.</p>
-                <br>
-                <br>
-              </div> 
           </article>
 
       </div>
@@ -220,16 +186,16 @@
                 </div>
                 <div class="social-media d-flex align-items-center gap-3">
                   <a href="https://www.facebook.com" target="_blank" class="nav-link">
-                    <img src="pics/facebook.webp" alt="Facebook" width="30" height="30">
+                    <img src="pics/facebook.webp" alt="Facebook" width="25" height="25">
                   </a>
                   <a href="https://www.twitter.com" target="_blank" class="nav-link">
-                    <img src="pics/twitter.png" alt="Twitter" width="30" height="30">
+                    <img src="pics/twitter.png" alt="Twitter" width="25" height="25">
                   </a>
                   <a href="https://www.instagram.com" target="_blank" class="nav-link">
-                    <img src="pics/instagram.webp" alt="Instagram" width="30" height="30">
+                    <img src="pics/instagram.webp" alt="Instagram" width="25" height="25">
                   </a>
                   <a href="https://www.youtube.com" target="_blank" class="nav-link">
-                    <img src="pics/youtube.png" alt="YouTube" width="30" height="30">
+                    <img src="pics/youtube.png" alt="YouTube" width="25" height="2">
                   </a>
                 </div>
             </div>
@@ -241,12 +207,15 @@
             </div>
         </div>
       </footer> 
-
+      <br>
+      <br>
+      <br>
       <footer class="mobilefooter"> 
         <div class="d-flex justify-content-between">
           <div class="mobilefooter1 text-start">
             <b>HämeCustoms</b> <br>
               Linnankatu 5 <br>
+              Hämeenlinna <br>
               13100
               <br>
               <br>

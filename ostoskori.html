@@ -16,9 +16,8 @@
 <body>
   <div class="container">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <!-- Corrected the nesting of <a> tags -->
       <a class="navbar-brand" href="index.html">
-        <img src="pics/logo.png" width="70" height="70" class="d-inline-block align-top" alt="">
+        <img src="pics/logo.png" width="70" height="70" class="d-inline-block align-top desktopsearch" alt="">
       </a>    
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,17 +38,17 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="tuotteet.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                TUOTTEET
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="tuotteet.html">Kaikki tuotteet</a></li>
-                <li><a class="dropdown-item" href="tietokoneet.html">Tietokoneet</a></li>
-                <li><a class="dropdown-item" href="hiiret.html">Hiiret</a></li>
-                <li><a class="dropdown-item" href="nappaimistot.html">Näppäimistöt</a></li>
-              </ul>
-            </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    TUOTTEET
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="tuotteet.html">Kaikki tuotteet</a></li>
+                    <li><a class="dropdown-item" href="tietokoneet.html">Tietokoneet</a></li>
+                    <li><a class="dropdown-item" href="hiiret.html">Hiiret</a></li>
+                    <li><a class="dropdown-item" href="nappaimistot.html">Näppäimistöt</a></li>
+                  </ul>
+              </li>
 
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="tietoa_meista.html">TIETOA MEISTÄ</a>
@@ -59,46 +58,44 @@
               <a class="nav-link active" aria-current="page" href="ota_yhteytta.html">OTA YHTEYTTÄ</a>
             </li>
 
-            <form class="desktopsearch">
-              <form class="d-flex search" role="search" style="padding-left: 20px;">
+            <li>
+              <div class="desktopsearch d-flex align-items-center">
                 <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 200px; height: 30px;">
-              </form>
-            </form>
+                <button class="btn btn-outline-success desktopsearchbutton" type="submit" style="width: 40px; height: 30px; display: flex; align-items: center; justify-content: center;">
+                  <img src="pics/search.png" alt="Search" width="20" height="20">
+                </button>
+              </div>
+                
+              
 
-            <!-- Moved button outside of the <ul> element -->
-            <div class="desktop-search-button-container">
-              <button class="btn btn-outline-success desktopsearchbutton" type="submit" style="width: 40px; height: 30px; display: flex; align-items: center; justify-content: center;">
-                <img src="pics/search.png" alt="Search" width="20" height="20">
-              </button>
-            </div>
-
-            <div class="mobilesearch">
-              <form class="d-flex search" role="search">
+              <div class="mobilesearch">
+                <form class="d-flex search" role="search">
                 <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 180px; height: 30px;">
-              </form>
-              <button class="btn btn-outline-success mobilesearchbutton" type="submit" style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">
+                </form>
+                <button class="btn btn-outline-success mobilesearchbutton" type="submit" style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">
                 <img src="pics/search.png" alt="Search" width="20" height="20">
               </button>
-            </div>
-          </ul>
+              </div>
+            </li>
 
-          <div class="desktopheadericons">
-            <div class="d-flex align-items-center">
-              <a href="ostoskori.html">
-                <img src="pics/shoppingcart.png" alt="" width="20" height="auto" class="me-5" role="button">
+            <li class="nav-item desktopsearch">
+              <a href="ostoskori.html" class="nav-link"  style="padding-left: 70px;">
+                <img src="pics/shoppingcart.png" alt="Shopping cart" width="20" height="20" class="me-5">
               </a>
-              <a href="svenska.html" class="nav-link">På svenska</a>
-            </div>
-          </div>
+            </li>
+              <li class="nav-item desktopsearch">
+                <a href="svenska.html" class="nav-link">På svenska</a>
+              </li>
+            </ul>
 
-          <div class="mobileheadericons">
-            <div class="d-flex align-items-center">
-              <a href="ostoskori.html">
-                <img src="pics/shoppingcart.png" alt="" width="25" height="auto" role="button" class="me-5">
-              </a>
-              <a href="svenska.html" class="nav-link">På svenska</a>
+            <div class="mobileheadericons">
+              <div class="d-flex align-items-center">
+                <a href="ostoskori.html" class="nav-link">
+                  <img src="pics/shoppingcart.png" alt="" width="25" height="25" class="me-5">
+                </a>
+                <a href="svenska.html" class="nav-link">På svenska</a>
+              </div>
             </div>
-          </div>
         </div>
       </div>
     </nav>
@@ -109,7 +106,7 @@
           <h2>OSTOSKORI</h2>
           <h3 class="col-md-12 p-5 d-flex align-items-center justify-content-center">
               Ostoskorisi on tyhjä
-              <img src="pics/shoppingcart.png" alt="" width="20" height="auto" class="ms-2">
+              <img src="pics/shoppingcart.png" alt="" width="20" height="15" class="ms-2">
           </h3>
           <div class="col-md-12 mt-4">
               <a href="tuotteet.html" class="btn btn-primary">Katso valikoimamme</a>
@@ -133,16 +130,16 @@
                 </div>
                 <div class="social-media d-flex align-items-center gap-3">
                     <a href="https://www.facebook.com" target="_blank" class="nav-link">
-                        <img src="pics/facebook.webp" alt="Facebook" width="30" height="30">
+                        <img src="pics/facebook.webp" alt="Facebook" width="25" height="25">
                     </a>
                     <a href="https://www.twitter.com" target="_blank" class="nav-link">
-                        <img src="pics/twitter.png" alt="Twitter" width="30" height="30">
+                        <img src="pics/twitter.png" alt="Twitter" width="25" height="25">
                     </a>
                     <a href="https://www.instagram.com" target="_blank" class="nav-link">
-                        <img src="pics/instagram.webp" alt="Instagram" width="30" height="30">
+                        <img src="pics/instagram.webp" alt="Instagram" width="25" height="25">
                     </a>
                     <a href="https://www.youtube.com" target="_blank" class="nav-link">
-                        <img src="pics/youtube.png" alt="YouTube" width="30" height="30">
+                        <img src="pics/youtube.png" alt="YouTube" width="25" height="25">
                     </a>
                 </div>
             </div>
@@ -160,6 +157,7 @@
         <div class="mobilefooter1 text-start">
           <b>HämeCustoms</b> <br>
             Linnankatu 5 <br>
+            Hämeenlinna <br>
             13100
             <br><br>
             <div class="social-media d-flex align-items-center gap-3">

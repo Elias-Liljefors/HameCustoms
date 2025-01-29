@@ -12,193 +12,187 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   </head>
   
-<body>
+  <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <a class="navbar-brand" href="#">
-              <a href="index.html" class="logo">
-                <img src="pics/logo.png" width="70" height="70" class="d-inline-block align-top" alt="">
-              </a>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <form class="navbar-brand">
+          <a href="index.html" class="logo">
+            <img src="pics/logo.png" width="70" height="70" class="d-inline-block align-top" alt="logo">
+          </a>
+        </form>    
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-flex align-items-center">
+            <a href="index.html" class="nav-link">
+              <img src="pics/logo.png" width="60" height="60" class="mobilelogo" alt="">
             </a>
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"></a>
-              
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="d-flex align-items-center">
-                <a href="index.html" class="nav-link">
-               <img src="pics/logo.png" width="60" height="60" class="mobilelogo" alt="">
-              </a>
-             </div>
-             
-             <a href="index.html" class="nav-link"><h1 class="desktopnimi">HämeCustoms</h1></a>
-              
-              <div class="mobilenimi" >
-                <a href="index.html" class="nav-link">
-                  <h1>HämeCustoms</h1>
-                </a>
-              </div>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          TUOTTEET
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="tuotteet.html">Kaikki tuotteet</a></li>
-                          <li><a class="dropdown-item" href="tietokoneet.html">Tietokoneet</a></li>
-                          <li><a class="dropdown-item" href="hiiret.html">Hiiret</a></li>
-                          <li><a class="dropdown-item" href="nappaimistot.html">Näppäimistöt</a></li>
-                        </ul>
-                      </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="tietoa_meista.html">TIETOA MEISTÄ</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="ota_yhteytta.html">OTA YHTEYTTÄ</a>
-                  </li>
-
-                  <form class="desktopsearch">
-                    <form class="d-flex search" role="search" style="padding-left: 20px;">
-                      <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 200px; height: 30px;">
-                      </form>
-                      <button class="btn btn-outline-success desktopsearchbutton" type="submit" style="width: 40px; height: 30px; display: flex; align-items: center; justify-content: center;">
-                      <img src="pics/search.png" alt="Search" width="20" height="20">
-                      </button>
-                  </form>
-                    
-                  
-
-                  <div class="mobilesearch">
-                    <form class="d-flex search" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 180px; height: 30px;">
-                    </form>
-                    <button class="btn btn-outline-success mobilesearchbutton" type="submit" style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">
+          </div>
+         
+         <a href="index.html" class="nav-link"><h1 class="desktopnimi">HämeCustoms</h1></a>
+          
+          <div class="mobilenimi">
+            <a href="index.html" class="nav-link">
+              <h1>HämeCustoms</h1>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      TUOTTEET
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="tuotteet.html">Kaikki tuotteet</a></li>
+                      <li><a class="dropdown-item" href="tietokoneet.html">Tietokoneet</a></li>
+                      <li><a class="dropdown-item" href="hiiret.html">Hiiret</a></li>
+                      <li><a class="dropdown-item" href="nappaimistot.html">Näppäimistöt</a></li>
+                    </ul>
+                </li>
+  
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="tietoa_meista.html">TIETOA MEISTÄ</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="ota_yhteytta.html">OTA YHTEYTTÄ</a>
+              </li>
+  
+              <li>
+                <div class="desktopsearch d-flex align-items-center">
+                  <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 200px; height: 30px;">
+                  <button class="btn btn-outline-success desktopsearchbutton" type="submit" style="width: 40px; height: 30px; display: flex; align-items: center; justify-content: center;">
                     <img src="pics/search.png" alt="Search" width="20" height="20">
                   </button>
-                  </div>
-                </ul>
-
-                <div class="desktopheadericons">
-                  <div class="d-flex align-items-center">
-                    <a href="ostoskori.html" class="nav-link">
-                      <img src="pics/shoppingcart.png" alt="" width="20" height="auto" class="me-5" role="button">
-                      <a href="svenska.html" class="nav-link">På svenska</a>
-                  </div>
                 </div>
-
-                <div class="mobileheadericons">
-                  <div class="d-flex align-items-center">
-                    <a href="ostoskori.html" class="nav-link">
-                      <img src="pics/shoppingcart.png" alt="" width="25" height="auto" role="button" class="me-5">
-                    <a href="svenska.html" class="nav-link">På svenska</a>
-                  </div>
+                  
+                
+  
+                <div class="mobilesearch">
+                  <form class="d-flex search" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 180px; height: 30px;">
+                  </form>
+                  <button class="btn btn-outline-success mobilesearchbutton" type="submit" style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">
+                  <img src="pics/search.png" alt="Search" width="20" height="20">
+                </button>
+                </div>
+              </li>
+  
+              <li class="nav-item desktopsearch">
+                <a href="ostoskori.html" class="nav-link"  style="padding-left: 70px;">
+                  <img src="pics/shoppingcart.png" alt="Shopping cart" width="20" height="20" class="me-5">
+                </a>
+              </li>
+                <li class="nav-item desktopsearch">
+                  <a href="svenska.html" class="nav-link">På svenska</a>
+                </li>
+              </ul>
+  
+              <div class="mobileheadericons">
+                <div class="d-flex align-items-center">
+                  <a href="ostoskori.html" class="nav-link">
+                    <img src="pics/shoppingcart.png" alt="" width="25" height="25" class="me-5">
+                  </a>
+                  <a href="svenska.html" class="nav-link">På svenska</a>
                 </div>
               </div>
-            </div>
-          </nav>
-    
-          <!-- Otsikko ja teksti -->
-        <div class="desktopartikkeliyhteys">
-          <div class="row align-items-center">
-            <article class="col-md-6 p-5">
-              <br>
-              <h1>OTA YHTEYTTÄ</h1>
-              <p>Haluamme tarjota sinulle parhaan mahdollisen käyttökokemuksen sivuillamme. Jos sinulla on ehdotuksia tai palautetta sivustomme toimivuudesta, käytettävyydestä tai sisällöstä, kuulemme niitä mielellämme! Keräämme kaikki palautteet palvelumme kehittämiseksi. Täytä alla oleva lomake, ja auta meitä kehittämään palveluitamme!</p>
+          </div>
+        </div>
+      </nav>
+
+      
+      <div class="artikkeliyhteys">
+        <div class="row align-items-center">
+          <article class="col-md-6 p-5">
+            <h1>OTA YHTEYTTÄ</h1>
+            <p>Haluamme tarjota sinulle parhaan mahdollisen käyttökokemuksen sivuillamme. Jos sinulla on ehdotuksia tai palautetta sivustomme toimivuudesta, käytettävyydestä tai sisällöstä, kuulemme niitä mielellämme! Keräämme kaikki palautteet palvelumme kehittämiseksi. Täytä alla oleva lomake, ja auta meitä kehittämään palveluitamme!</p>
           </article>
         </div>
-        
-          <!-- Lomake -->
-          <div class="row align-items-center artikkeli">
-            <form class="col-md-6 p-5">
-            <label for="sahkopostiosoite">Sähköpostiosoite:</label>
-            <input type="email" id="sahkopostiosoite" name="sahkopostiosoite"><br><br>
-        
-            <label for="message">Viesti:</label>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-        
+
+        <div class="row align-items-center artikkeli">
+          <form class="col-md-6 p-5">
+            <label for="sahkopostiosoitedesktop">Sähköpostiosoite:</label>
+            <input type="email" id="sahkopostiosoitedesktop" name="sahkopostiosoite"><br><br>
+
+            <label for="messagedesktop">Viesti:</label>
+            <textarea id="messagedesktop" name="message" rows="4" cols="50"></textarea><br><br>
+
             <input type="submit" value="Lähetä">
           </form>
         </div>
+      </div>
 
-        <div class="teksti">
-          <br>
-          <br>
-          <br>
-          <br>
-          </div>
-        </div>
-        
-        <footer class="desktopfooter"> 
-          <div class="row p-7">
-              <div class="col-md-6">
-                  <div class="text-start pe-4 mt-4 footer1">
-                    <b>HämeCustoms</b> <br>
-                      Linnankatu 5 <br>
-                      Hämeenlinna <br>
-                      13100
-                      <br>
-                      <br>
-                  </div>
-                  <div class="social-media d-flex align-items-center gap-3">
-                    <a href="https://www.facebook.com" target="_blank" class="nav-link">
-                      <img src="pics/facebook.webp" alt="Facebook" width="30" height="30">
-                    </a>
-                    <a href="https://www.twitter.com" target="_blank" class="nav-link">
-                      <img src="pics/twitter.png" alt="Twitter" width="30" height="30">
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank" class="nav-link">
-                      <img src="pics/instagram.webp" alt="Instagram" width="30" height="30">
-                    </a>
-                    <a href="https://www.youtube.com" target="_blank" class="nav-link">
-                      <img src="pics/youtube.png" alt="YouTube" width="30" height="30">
-                    </a>
-                  </div>
-              </div>
-              <div class="col-md-6">
-                  <div class="text-end pe-4 mt-4 footer2">
-                      All rights reserved <br>
-                      &copy; 2025 HämeCustoms
-                  </div>
-              </div>
-          </div>
-        </footer> 
-
-        <footer class="mobilefooter"> 
-          <div class="d-flex justify-content-between">
-            <div class="mobilefooter1 text-start">
+      <!-- Footer -->
+      <footer class="desktopfooter"> 
+        <div class="row p-7">
+          <div class="col-md-6">
+            <div class="text-start pe-4 mt-4 footer1">
               <b>HämeCustoms</b> <br>
-                Linnankatu 5 <br>
-                13100
-                <br>
-                <br>
-                <div class="social-media d-flex align-items-center gap-3">
-                  <a href="https://www.facebook.com" target="_blank" class="nav-link">
-                    <img src="pics/facebook.webp" alt="Facebook" width="30" height="30">
-                  </a>
-                  <a href="https://www.twitter.com" target="_blank" class="nav-link">
-                    <img src="pics/twitter.png" alt="Twitter" width="30" height="30">
-                  </a>
-                  <a href="https://www.instagram.com" target="_blank" class="nav-link">
-                    <img src="pics/instagram.webp" alt="Instagram" width="30" height="30">
-                  </a>
-                  <a href="https://www.youtube.com" target="_blank" class="nav-link">
-                    <img src="pics/youtube.png" alt="YouTube" width="30" height="30">
-                  </a>
-                </div>
+              Linnankatu 5 <br>
+              Hämeenlinna <br>
+              13100
+              <br>
+              <br>
             </div>
-            
-            <div class="mobilefooter2 text-end">
+            <div class="social-media d-flex align-items-center gap-3">
+              <a href="https://www.facebook.com" target="_blank" class="nav-link">
+                <img src="pics/facebook.webp" alt="Facebook" width="25" height="25">
+              </a>
+              <a href="https://www.twitter.com" target="_blank" class="nav-link">
+                <img src="pics/twitter.png" alt="Twitter" width="25" height="25">
+              </a>
+              <a href="https://www.instagram.com" target="_blank" class="nav-link">
+                <img src="pics/instagram.webp" alt="Instagram" width="25" height="25">
+              </a>
+              <a href="https://www.youtube.com" target="_blank" class="nav-link">
+                <img src="pics/youtube.png" alt="YouTube" width="25" height="25">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="text-end pe-4 mt-4 footer2">
               All rights reserved <br>
               &copy; 2025 HämeCustoms
-            </div> 
+            </div>
           </div>
-        </footer>
+        </div>
+      </footer> 
 
-    </div> <!-- .container -->
+      <footer class="mobilefooter"> 
+        <div class="d-flex justify-content-between">
+          <div class="mobilefooter1 text-start">
+            <b>HämeCustoms</b> <br>
+              Linnankatu 5 <br>
+              13100 <br>
+              Hämeenlinna
+              <br>
+              <br>
+              <div class="social-media d-flex align-items-center gap-3">
+                <a href="https://www.facebook.com" target="_blank" class="nav-link">
+                  <img src="pics/facebook.webp" alt="Facebook" width="30" height="30">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="nav-link">
+                  <img src="pics/twitter.png" alt="Twitter" width="30" height="30">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="nav-link">
+                  <img src="pics/instagram.webp" alt="Instagram" width="30" height="30">
+                </a>
+                <a href="https://www.youtube.com" target="_blank" class="nav-link">
+                  <img src="pics/youtube.png" alt="YouTube" width="30" height="30">
+                </a>
+              </div>
+          </div>
+          
+          <div class="mobilefooter2 text-end">
+            All rights reserved <br>
+            &copy; 2025 HämeCustoms
+          </div> 
+        </div>
+      </footer>
+
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
