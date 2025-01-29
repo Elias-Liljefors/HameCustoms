@@ -14,33 +14,35 @@
   </head>
 
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container"> <!-- Container aloitus, hyödyntää bootstrappia -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- Navigaation aloitus -->
         <form class="navbar-brand">
-          <a href="index.html" class="logo">
+          <a href="index.html" class="logo"> <!-- Logo työpöytäversioon -->
             <img src="pics/logo.png" width="70" height="70" class="d-inline-block align-top" alt="logo">
           </a>
-        </form>    
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </form>
+  
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="d-flex align-items-center">
-            <a href="index.html" class="nav-link">
-              <img src="pics/logo.png" width="60" height="60" class="mobilelogo" alt="">
-            </a>
-          </div>
+            </button>
+  
+              <div class="d-flex align-items-center"> <!-- Logo mobiiliversioon -->
+                <a href="index.html" class="nav-link">
+                  <img src="pics/logo.png" width="60" height="60" class="mobilelogo" alt="">
+                </a>
+              </div>
          
-         <a href="index.html" class="nav-link"><h1 class="desktopnimi">HämeCustoms</h1></a>
-          
-          <div class="mobilenimi">
-            <a href="index.html" class="nav-link">
-              <h1>HämeCustoms</h1>
-            </a>
-          </div>
+              <a href="index.html" class="nav-link"><h1 class="desktopnimi">HämeCustoms</h1></a>
+              <div class="mobilenimi">
+                <a href="index.html" class="nav-link">
+                  <h1>HämeCustoms</h1>
+                </a>
+              </div>
+  
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown"> <!-- Navigoinnin dropdown valikko -->
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       TUOTTEET
                     </a>
@@ -68,27 +70,25 @@
                   </button>
                 </div>
                   
-                
-  
                 <div class="mobilesearch">
-                    <form class="d-flex search" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 180px; height: 30px;">
-                    </form>
-                    <button class="btn btn-outline-success mobilesearchbutton" type="submit" style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">
-                    <img src="pics/search.png" alt="Search" width="20" height="20">
-                  </button>
-                  </div>
-                </li>
-    
+                  <form class="d-flex search" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 180px; height: 30px;">
+                  </form>
+                  <button class="btn btn-outline-success mobilesearchbutton" type="submit" style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">
+                  <img src="pics/search.png" alt="Search" width="20" height="20">
+                </button>
+                </div>
+              </li>
+  
+              <li class="nav-item desktopsearch">
+                <a href="ostoskori.html" class="nav-link"  style="padding-left: 70px;">
+                  <img src="pics/shoppingcart.png" alt="Shopping cart" width="20" height="20" class="me-5">
+                </a>
+              </li>
                 <li class="nav-item desktopsearch">
-                  <a href="ostoskori.html" class="nav-link"  style="padding-left: 70px;">
-                    <img src="pics/shoppingcart.png" alt="Shopping cart" width="20" height="20" class="me-5">
-                  </a>
+                  <a href="svenska.html" class="nav-link">På svenska</a>
                 </li>
-                  <li class="nav-item desktopsearch">
-                    <a href="svenska.html" class="nav-link">På svenska</a>
-                  </li>
-                </ul>
+              </ul>
   
               <div class="mobileheadericons">
                 <div class="d-flex align-items-center">
@@ -100,7 +100,9 @@
               </div>
           </div>
         </div>
-      </nav>
+      </nav> <!-- Navigaation loppu -->
+  
+      <!-- Sivuston pääsisältö  alkaa -->
     
         <div class="row align-items-center desktopartikkelituotteet">
             <article class="col-md-6 p-5">

@@ -1,5 +1,5 @@
 /* Yleinen/etusivu alkaa */
-body
+body /* sivun yleisien elementtejen määritys */
 {
     background-color: white;
     color: #ffffff;
@@ -13,38 +13,32 @@ body
     padding-bottom: 40px;
 }
 
-.teksti
+.teksti /* tyhjien alueiden läpinäkyvyys */
 {
     color: rgba(255, 255, 255, 0);
 }
 
-.desktopartikkeli
+.desktopartikkeli /* index.html sisällön määritys */
 {
     padding-left: 75px;
 }
 
-.desktopartikkelisvenska
+.desktopartikkelisvenska /* svenska.html määritykset */
 {
     padding-left: 70px;
     padding-bottom: 300px;
     padding-top: 30px;
 }
 
-.artikkeliyhteys
+.artikkeliyhteys /* ota_yhteytta.html, tietoameistä.html määritykset */
 {
     padding-left: 70px;
 }
 
-h2
+h2 /* H2 otsikoiden määritys */
 {
     font-weight: 350;
 }
-
-.bg
-{
-    color: rgb(0, 0, 139);
-}
-
 
 
 /* Desktop navbar alkaa */
@@ -141,176 +135,8 @@ h2
 .mobilelogo, .mobilefooter, .mobileheadericons, .mobileartikkeli, .mobilenimi, .mobilesearch, .mobilesearchbutton .mobileheadericons, .mobilepcpic, .mobileartikkelisvenska, .mobileartikkeliyhteys {
     display: none;
 }
-
   
 /* Yleinen/etusivu loppu */
-
-/* Mobiili optimointi */
-
-@media (max-width: 767.98px) {
-
-.text-content {
-    max-width: fit-content;
-    padding: 0 15px;
-}
-.artikkeli {
-    flex-direction: column;
-    justify-content: start;
-    height: auto;
-    padding-left: 0;
-}
-
-/* Mobiilinäkymän navbari alkaa */
-
-.navbar {
-    background: transparent !important;
-    border-radius: 15px;
-    padding: 5px;
-    top: 0;
-    z-index: 1000;
-    padding-bottom: 15px;
-
-}
-
-.dropdown-menu {
-    background-color: rgba(255, 255, 255, 0.24); 
-}
-
-.navbar-nav .nav-link {
-    font-size: 14px;
-    padding: 0.5rem;
-}
-
-/* Mobiilinäkymän navbari loppuu */
-
-/* Poistetaan desktop näkymän elementit */
-
-.desktopfooter, .desktopartikkeli, .desktopnimi, .desktopsearch, .desktopsearchbutton, .desktopheadericons, .desktoppcpic, .desktopartikkelisvenska, .desktopartikkeliyhteys
-{
-    display: none !important;
-}
-
-.desktopheadericons, .desktopsearch {
-    display: none;
-    padding-left: 10px;
-}
-
-.pc_image {
-    display: none;
-}
-
-.logo {
-    display: none;
-}
-
-/* Otetaan mobiili näkymän elementit käyttöön*/
-
-.mobileartikkeli
-{
-    display: flex;
-}
-
-.mobileartikkelisvenska
-{
-    display: flex;
-    padding-bottom: 200px;
-}
-.desktopartikkelituotteet
-{
-    padding-left: 0px !important;
-}
-
-.desktopartikkelituotteetyleinen
-{
-    padding-left: 80px !important;
-}
-
-.artikkeliyhteys
-{
-    display: block;
-    padding-bottom: 200px !important;
-    padding-left: 0px !important;
-}
-
-.mobilesearch
-{
-    display: flex;
-    padding-left: 7px;
-    padding-bottom: 5px;
-}
-
-.mobilepcpic
-{
-    display: flex;
-    padding-left: 50px;
-}
-
-.mobilenimi
-{
-    display: flex;
-    padding-top: 10px;
-}
-
-.mobileheadericons {
-    display: flex;
-    padding-left: 10px;
-}
-
-.mobilesearchbutton:hover
-{
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.247) !important;
-    border-color: rgb(0, 0, 0) !important;
-}
-
-.mobilesearchbutton
-{
-    display: flex;
-    border-color: rgba(255, 255, 255, 0.185) !important;
-    background-color: rgba(255, 255, 255, 0.185) !important;
-}
-
-.mobilelogo{
-    display: flex;
-    padding: 10px;
-}
-
-.artikkeliyhteys
-{
-    display: block;
-    padding-left: 80px;
-}
-
-/* Mobiilinäkymän footer */
-
-.mobilefooter {
-    font-size: 16px;
-    display: flex;
-}
-
-.mobilefooter1 /* Vasemmanpuolinen footer */
-{
-    padding-left: 10px;
-}
-
-.mobilefooter2 /* Oikeanpuolinen footer */
-{
-    padding-left: 40px;
-}
-
-/* footer loppuu */
-
-/* tuotteet */
-
-.custom-btn {
-    max-width: 100%; /* Täysi leveys pienillä näytöillä */
-    padding: 10px 20px;
-  }
-
-/* tuotteet loppuu */
-
-} /* Mobiili optimointi loppuu */
-
 
 /* Ota Yhteyttä */
 
@@ -384,5 +210,171 @@ input[type="submit"]:hover {
     height: auto;
     width: 25px; 
   }
-  
+/* Tietoa Meistä loppuu tähän */
 
+/* Mobiili optimointi */
+
+@media (max-width: 767.98px) {
+
+    .text-content {
+        max-width: fit-content;
+        padding: 0 15px;
+    }
+    .artikkeli {
+        flex-direction: column;
+        justify-content: start;
+        height: auto;
+        padding-left: 0;
+    }
+    
+    /* Mobiilinäkymän navbari alkaa */
+    
+    .navbar {
+        background: transparent !important;
+        border-radius: 15px;
+        padding: 5px;
+        top: 0;
+        z-index: 1000;
+        padding-bottom: 15px;
+    
+    }
+    
+    .dropdown-menu {
+        background-color: rgba(255, 255, 255, 0.24); 
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+    
+    /* Mobiilinäkymän navbari loppuu */
+    
+    /* Poistetaan desktop näkymän elementit */
+    
+    .desktopfooter, .desktopartikkeli, .desktopnimi, .desktopsearch, .desktopsearchbutton, .desktopheadericons, .desktoppcpic, .desktopartikkelisvenska, .desktopartikkeliyhteys
+    {
+        display: none !important;
+    }
+    
+    .desktopheadericons, .desktopsearch {
+        display: none;
+        padding-left: 10px;
+    }
+    
+    .pc_image {
+        display: none;
+    }
+    
+    .logo {
+        display: none;
+    }
+    
+    /* Otetaan mobiili näkymän elementit käyttöön*/
+    
+    .mobileartikkeli
+    {
+        display: flex;
+    }
+    
+    .mobileartikkelisvenska
+    {
+        display: flex;
+        padding-bottom: 200px;
+    }
+
+    .desktopartikkelituotteet
+    {
+        padding-left: 0px !important;
+    }
+    
+    .desktopartikkelituotteetyleinen
+    {
+        padding-left: 80px !important;
+    }
+    
+    .artikkeliyhteys
+    {
+        display: block;
+        padding-bottom: 200px !important;
+        padding-left: 0px !important;
+    }
+    
+    .mobilesearch
+    {
+        display: flex;
+        padding-left: 7px;
+        padding-bottom: 5px;
+    }
+    
+    .mobilepcpic
+    {
+        display: flex;
+        padding-left: 50px;
+    }
+    
+    .mobilenimi
+    {
+        display: flex;
+        padding-top: 10px;
+    }
+    
+    .mobileheadericons {
+        display: flex;
+        padding-left: 10px;
+    }
+    
+    .mobilesearchbutton:hover
+    {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.247) !important;
+        border-color: rgb(0, 0, 0) !important;
+    }
+    
+    .mobilesearchbutton
+    {
+        display: flex;
+        border-color: rgba(255, 255, 255, 0.185) !important;
+        background-color: rgba(255, 255, 255, 0.185) !important;
+    }
+    
+    .mobilelogo{
+        display: flex;
+        padding: 10px;
+    }
+    
+    .artikkeliyhteys
+    {
+        display: block;
+        padding-left: 80px;
+    }
+    
+    /* Mobiilinäkymän footer */
+    
+    .mobilefooter {
+        font-size: 16px;
+        display: flex;
+    }
+    
+    .mobilefooter1 /* Vasemmanpuolinen footer */
+    {
+        padding-left: 10px;
+    }
+    
+    .mobilefooter2 /* Oikeanpuolinen footer */
+    {
+        padding-left: 40px;
+    }
+    
+    /* footer loppuu */
+    
+    /* tuotteet */
+    
+    .custom-btn {
+        max-width: 100%; /* Täysi leveys pienillä näytöillä */
+        padding: 10px 20px;
+      }
+    
+    /* tuotteet loppuu */
+    
+    } /* Mobiili optimointi loppuu */

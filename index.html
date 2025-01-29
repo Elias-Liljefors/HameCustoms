@@ -9,37 +9,39 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> <!-- Fonttien linkitys -->
   </head>
 
 <body>
-  <div class="container">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container"> <!-- Container aloitus, hyödyntää bootstrappia -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- Navigaation aloitus -->
       <form class="navbar-brand">
-        <a href="index.html" class="logo">
+        <a href="index.html" class="logo"> <!-- Logo työpöytäversioon -->
           <img src="pics/logo.png" width="70" height="70" class="d-inline-block align-top" alt="logo">
         </a>
-      </form>    
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      </form>
+
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="d-flex align-items-center">
-          <a href="index.html" class="nav-link">
-            <img src="pics/logo.png" width="60" height="60" class="mobilelogo" alt="">
-          </a>
-        </div>
+          </button>
+
+            <div class="d-flex align-items-center"> <!-- Logo mobiiliversioon -->
+              <a href="index.html" class="nav-link">
+                <img src="pics/logo.png" width="60" height="60" class="mobilelogo" alt="">
+              </a>
+            </div>
        
-       <a href="index.html" class="nav-link"><h1 class="desktopnimi">HämeCustoms</h1></a>
-        
-        <div class="mobilenimi">
-          <a href="index.html" class="nav-link">
-            <h1>HämeCustoms</h1>
-          </a>
-        </div>
+            <a href="index.html" class="nav-link"><h1 class="desktopnimi">HämeCustoms</h1></a>
+            <div class="mobilenimi">
+              <a href="index.html" class="nav-link">
+                <h1>HämeCustoms</h1>
+              </a>
+            </div>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown"> <!-- Navigoinnin dropdown valikko -->
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     TUOTTEET
                   </a>
@@ -67,8 +69,6 @@
                 </button>
               </div>
                 
-              
-
               <div class="mobilesearch">
                 <form class="d-flex search" role="search">
                 <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 180px; height: 30px;">
@@ -99,8 +99,10 @@
             </div>
         </div>
       </div>
-    </nav>
-        <div class="row align-items-center desktopartikkeli genericpadding">
+    </nav> <!-- Navigaation loppu -->
+
+    <!-- Sivuston pääsisältö  alkaa -->
+        <div class="row align-items-center desktopartikkeli genericpadding"> 
             <article class="col-md-20 p-5">
                 <br>
                 <br>
@@ -113,10 +115,10 @@
                 <img src="pics/pc.png" alt="PC Image" class="pc_image">
                   <aside class="text-content col-md-8 p-5">  
                       <p>Tervetuloa uuteen verkkokauppaamme! Täältä löydät maan (ja ehkä maailman) parhaimman valikoiman tietokoneita ja oheislaitteita.</p> <br>
-                      <p>Teemme yhteyistyötä tubettajien ja muiden pro gamereiden kanssa. Myös rappiotubettajien liikenne on meille tärkeää sillä välillä voi tulla ö ja pahat tillanteet jolloin kalex kaatuu konneelle ja se kaikki menee vituis &äijienmaailmanlopun.</p>
+                      <p>Etsimme kokoajan uusia ja kiinnostavia laitteita valikoimaamme. Suosittelemme katsomaan erityisesti hiiret ja näppäimistöt, sillä ne ovat eksklusiivisia meidän verkkokauppaamme.</p>
                   </aside>
                 </div>
-                <div id="ekakaruselli" class="carousel slide" data-bs-ride="carousel">
+                <div id="ekakaruselli" class="carousel slide" data-bs-ride="carousel"> <!-- Tuotekuva karuselli työpöytäversioon -->
                   <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
                       <img src="pics/computer2.png" class="d-block w-50 mx-auto" alt="...">
@@ -134,8 +136,9 @@
                 </div> 
             </article>
         </div>
-
-        <div class="row align-items-center mobileartikkeli">
+        
+        <!-- Mobiilinäkymän pääsisällön alku -->
+        <div class="row align-items-center mobileartikkeli"> 
           <article class="col-md-20 p-3">
               <br>
               <br>
@@ -149,12 +152,12 @@
                 <aside class="text-content col-md-8 p-5">  
                     <br>
                     <p>Tervetuloa uuteen verkkokauppaamme! Täältä löydät maan (ja ehkä maailman) parhaimman valikoiman tietokoneita ja oheislaitteita.</p> <br>
-                    <p>Teemme yhteyistyötä tubettajien ja muiden pro gamereiden kanssa. Myös rappiotubettajien liikenne on meille tärkeää sillä välillä voi tulla ö ja pahat tillanteet jolloin kalex kaatuu konneelle ja se kaikki menee vituis &äijienmaailmanlopun.</p>
+                    <p>Etsimme kokoajan uusia ja kiinnostavia laitteita valikoimaamme. Suosittelemme katsomaan erityisesti hiiret ja näppäimistöt, sillä ne ovat eksklusiivisia meidän verkkokauppaamme. </p>
                     <br>
                     <br>
                   </aside>
               </div>
-              <div id="tokakaruselli" class="carousel slide" data-bs-ride="carousel">
+              <div id="tokakaruselli" class="carousel slide" data-bs-ride="carousel"> <!-- Tuotekuva karuselli mobiilinäkymään -->
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="3000">
                     <img src="pics/computer2.png" class="d-block w-50 mx-auto" alt="...">
@@ -171,8 +174,11 @@
                 </div>
               </div>
           </article>
+        </div>
+        <!-- Mobiilinäkymän pääsisältö loppuu -->
+        <!-- Sivuston pääsisältö  loppuu -->
 
-      </div>
+      <!-- Työpöytäversion footer alkaa -->
       <footer class="desktopfooter"> 
         <div class="row p-7">
             <div class="col-md-6">
@@ -210,6 +216,9 @@
       <br>
       <br>
       <br>
+      <!-- Työpöytäversion footer lopetus -->
+
+      <!-- Mobiiliversion footer alkaa -->
       <footer class="mobilefooter"> 
         <div class="d-flex justify-content-between">
           <div class="mobilefooter1 text-start">
@@ -241,8 +250,9 @@
           </div> 
         </div>
       </footer>
+      <!-- Mobiiliversion footer lopetus -->
       
-    </div>
+  </div> <!-- Container lopetus -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

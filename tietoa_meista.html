@@ -12,94 +12,96 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   </head>
   
-<body>
-  <div class="container">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <form class="navbar-brand">
-        <a href="index.html" class="logo">
-          <img src="pics/logo.png" width="70" height="70" class="d-inline-block align-top" alt="">
-        </a>
-      </form>    
-      <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="d-flex align-items-center">
+  <body>
+    <div class="container"> <!-- Container aloitus, hyödyntää bootstrappia -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- Navigaation aloitus -->
+        <form class="navbar-brand">
+          <a href="index.html" class="logo"> <!-- Logo työpöytäversioon -->
+            <img src="pics/logo.png" width="70" height="70" class="d-inline-block align-top" alt="logo">
+          </a>
+        </form>
+  
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+  
+              <div class="d-flex align-items-center"> <!-- Logo mobiiliversioon -->
                 <a href="index.html" class="nav-link">
                   <img src="pics/logo.png" width="60" height="60" class="mobilelogo" alt="">
                 </a>
               </div>
-             
-             <a href="index.html" class="nav-link"><h1 class="desktopnimi">HämeCustoms</h1></a>
-              
+         
+              <a href="index.html" class="nav-link"><h1 class="desktopnimi">HämeCustoms</h1></a>
               <div class="mobilenimi">
                 <a href="index.html" class="nav-link">
                   <h1>HämeCustoms</h1>
                 </a>
               </div>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          TUOTTEET
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="tuotteet.html">Kaikki tuotteet</a></li>
-                          <li><a class="dropdown-item" href="tietokoneet.html">Tietokoneet</a></li>
-                          <li><a class="dropdown-item" href="hiiret.html">Hiiret</a></li>
-                          <li><a class="dropdown-item" href="nappaimistot.html">Näppäimistöt</a></li>
-                        </ul>
-                    </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="tietoa_meista.html">TIETOA MEISTÄ</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="ota_yhteytta.html">OTA YHTEYTTÄ</a>
-                  </li>
-
-                  <li>
-                    <div class="desktopsearch d-flex align-items-center">
-                      <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 200px; height: 30px;">
-                      <button class="btn btn-outline-success desktopsearchbutton" type="submit" style="width: 40px; height: 30px; display: flex; align-items: center; justify-content: center;">
-                        <img src="pics/search.png" alt="Search" width="20" height="20">
-                      </button>
-                    </div>
-                      
-                    
   
-                    <div class="mobilesearch">
-                      <form class="d-flex search" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 180px; height: 30px;">
-                      </form>
-                      <button class="btn btn-outline-success mobilesearchbutton" type="submit" style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">
-                      <img src="pics/search.png" alt="Search" width="20" height="20">
-                    </button>
-                    </div>
-                  </li>
-
-                  <li class="nav-item desktopsearch">
-                    <a href="ostoskori.html" class="nav-link" style="padding-left: 70px;">
-                      <img src="pics/shoppingcart.png" alt="Shopping cart" width="20" height="20" class="me-5">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown"> <!-- Navigoinnin dropdown valikko -->
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      TUOTTEET
                     </a>
-                  </li>
-                    <li class="nav-item desktopsearch">
-                      <a href="svenska.html" class="nav-link">På svenska</a>
-                    </li>
-                  </ul>
-
-                  <div class="mobileheadericons">
-                    <div class="d-flex align-items-center">
-                      <a href="ostoskori.html" class="nav-link">
-                        <img src="pics/shoppingcart.png" alt="" width="25" height="25" class="me-5">
-                      </a>
-                      <a href="svenska.html" class="nav-link">På svenska</a>
-                    </div>
-                  </div>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="tuotteet.html">Kaikki tuotteet</a></li>
+                      <li><a class="dropdown-item" href="tietokoneet.html">Tietokoneet</a></li>
+                      <li><a class="dropdown-item" href="hiiret.html">Hiiret</a></li>
+                      <li><a class="dropdown-item" href="nappaimistot.html">Näppäimistöt</a></li>
+                    </ul>
+                </li>
+  
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="tietoa_meista.html">TIETOA MEISTÄ</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="ota_yhteytta.html">OTA YHTEYTTÄ</a>
+              </li>
+  
+              <li>
+                <div class="desktopsearch d-flex align-items-center">
+                  <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 200px; height: 30px;">
+                  <button class="btn btn-outline-success desktopsearchbutton" type="submit" style="width: 40px; height: 30px; display: flex; align-items: center; justify-content: center;">
+                    <img src="pics/search.png" alt="Search" width="20" height="20">
+                  </button>
+                </div>
+                  
+                <div class="mobilesearch">
+                  <form class="d-flex search" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Haku" aria-label="Search" style="width: 180px; height: 30px;">
+                  </form>
+                  <button class="btn btn-outline-success mobilesearchbutton" type="submit" style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">
+                  <img src="pics/search.png" alt="Search" width="20" height="20">
+                </button>
+                </div>
+              </li>
+  
+              <li class="nav-item desktopsearch">
+                <a href="ostoskori.html" class="nav-link"  style="padding-left: 70px;">
+                  <img src="pics/shoppingcart.png" alt="Shopping cart" width="20" height="20" class="me-5">
+                </a>
+              </li>
+                <li class="nav-item desktopsearch">
+                  <a href="svenska.html" class="nav-link">På svenska</a>
+                </li>
+              </ul>
+  
+              <div class="mobileheadericons">
+                <div class="d-flex align-items-center">
+                  <a href="ostoskori.html" class="nav-link">
+                    <img src="pics/shoppingcart.png" alt="" width="25" height="25" class="me-5">
+                  </a>
+                  <a href="svenska.html" class="nav-link">På svenska</a>
+                </div>
               </div>
-            </div>
-          </nav>
+          </div>
+        </div>
+      </nav> <!-- Navigaation loppu -->
+  
+      <!-- Sivuston pääsisältö  alkaa -->
 
         <div class="artikkeliyhteys">
           <div class="row align-items-center">
@@ -117,20 +119,14 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-4">
+                    <!--Ensimmäinen kortti-->
                     <div class="card" style="height: 550px; background-color: rgba(255, 255, 255, 0.5);">
                       <img src="pics/computer3.png" class="card-img-top" alt="Product Image">
                       <div class="card-body">
                         <h5 class="card-title">NebulaStrike X</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Arvostelija: Mikael Kosola</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Arvostelija: Sami Arajärvi</h6>
                         <p class="card-text">"Tilaukseni ylitti täysin kaikki odotukseni! Ammattimaista palvelua!"</p>
                         <div class="d-flex justify-content-between align-items-center">
-                          <span class="text-warning">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star"></i>
-                          </span>
                           <small class="text-muted">Tammikuu 25, 2025</small>
                         </div>
                       </div>
@@ -138,20 +134,14 @@
                   </div>
                 
                   <div class="col-md-4">
+                    <!-- Toinen kortti-->
                     <div class="card" style="height: 550px; background-color: rgba(255, 255, 255, 0.5);">
                       <img src="pics/nappis1.png" class="card-img-top" alt="Product Image">
                       <div class="card-body">
                         <h5 class="card-title">MechaMaster Pro</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Arvostelija: Arttu Pulkkinen</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Arvostelija: Simo Mäenpää</h6>
                         <p class="card-text">"Laadukkaat kustomoidut tietokoneet. Suosittelen!"</p>
                         <div class="d-flex justify-content-between align-items-center">
-                          <span class="text-warning">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star"></i>
-                          </span>
                           <small class="text-muted">Tammikuu 25, 2025</small>
                         </div>
                       </div>
@@ -159,6 +149,7 @@
                   </div>
 
                   <div class="col-md-4">
+                    <!-- Kolmas kortti alkaa tästä -->
                     <div class="card" style="height: 550px; background-color: rgba(255, 255, 255, 0.5);">
                       <img src="pics/hiiri2.png" class="card-img-top" alt="Product Image">
                       <div class="card-body">
@@ -166,13 +157,6 @@
                         <h6 class="card-subtitle mb-2 text-muted">Arvostelija: Jenna Rautio</h6>
                         <p class="card-text">"Erinomainen suorituskyky ja luotettavuus! Lämpimät suositukset!"</p>
                         <div class="d-flex justify-content-between align-items-center">
-                          <span class="text-warning">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star"></i>
-                          </span>
                           <small class="text-muted">Joulukuu 12, 2024</small>
                         </div>
                       </div>
